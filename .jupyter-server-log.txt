@@ -78,3 +78,117 @@
 TermSocket.open: 1
 TermSocket.open: Opened 1
 [I 17:08:49.063 NotebookApp] Saving file at /gitignore
+[W 2021-07-16 00:22:45.037 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-07-16 00:22:45.038 LabApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-07-16 00:22:45.038 LabApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-16 00:22:45.038 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-07-16 00:22:45.047 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.8/site-packages/jupyterlab
+[I 2021-07-16 00:22:45.047 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 00:22:45.057 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.8/site-packages/nteract_on_jupyter
+[I 00:22:45.059 NotebookApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 00:22:45.060 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 00:22:45.060 NotebookApp] Jupyter Notebook 6.2.0 is running at:
+[I 00:22:45.060 NotebookApp] http://jupyter-atompa-2dshiny-2d2l920hcc:8888/user/atompa-shiny-2l920hcc/?token=...
+[I 00:22:45.060 NotebookApp]  or http://127.0.0.1:8888/user/atompa-shiny-2l920hcc/?token=...
+[I 00:22:45.060 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 00:22:45.066 NotebookApp] No web browser found: could not locate runnable browser.
+[I 00:22:45.069 NotebookApp] 302 GET /user/atompa-shiny-2l920hcc/ (10.0.0.17) 1.820000ms
+[I 00:22:47.414 NotebookApp] 302 GET /user/atompa-shiny-2l920hcc/?token=mbzunSdsQk6Tyrxm7Me_LA (65.24.251.73) 0.780000ms
+/usr/lib/rstudio-server/bin/rsession: Relink `/srv/conda/envs/notebook/lib/R/lib/../.././libgfortran.so.4' with `/lib/x86_64-linux-gnu/librt.so.1' for IFUNC symbol `clock_gettime'
+[I 00:25:08.178 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:25:08.182 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:28:42.149 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:28:42.154 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:01.531 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:01.535 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:19.750 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:19.754 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:39.941 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:39.945 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:40.820 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:40.824 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:43.220 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:29:43.225 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:30:34.428 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:30:34.432 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:30:51.454 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:30:51.458 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[W 00:35:26.817 NotebookApp] 404 GET /user/atompa-shiny-2l920hcc/rstudio/figures/logo.png (65.24.251.73) 3.690000ms referer=https://hub.gke2.mybinder.org/user/atompa-shiny-2l920hcc/rstudio/
+[I 00:35:30.103 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:35:30.106 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:37:01.410 NotebookApp] Saving file at /binder/environment.yml
+[I 00:37:09.670 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:37:09.673 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:37:39.260 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:37:39.263 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:38:05.224 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:38:05.228 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:39:01.914 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:39:01.917 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:39:13.497 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:39:13.501 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:40:10.479 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:40:10.483 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:41:12.936 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:41:12.940 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:42:24.374 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:42:24.378 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[E 00:43:24.146 NotebookApp] {
+      "Cookie": "port-token=1900cb6923a3; username-hub-gke2-mybinder-org=\"2|1:0|10:1626394967|30:username-hub-gke2-mybinder-org|44:YjBmNmQ4MmYwMmZhNDEzMDg5ZTQ3NzMyODhjNDg1MjY=|6498904e3ea82cb31368d1fd52155628630d340e6710b374cbd2450b42b6eb48\"; _xsrf=2|f1792eac|ebce2395b6b43cdd10bc5927f5e893b1|1624497231; csrf-token=339f5fa7-cd91-49d6-a686-61476a198580",
+      "If-None-Match": "W/\"67af9cf444110ef8162140ae8426e3fde5e82571\"",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/atompa-shiny-2l920hcc/rstudio/",
+      "Sec-Fetch-Dest": "iframe",
+      "Sec-Fetch-User": "?1",
+      "Sec-Fetch-Mode": "navigate",
+      "Sec-Fetch-Site": "same-origin",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "Upgrade-Insecure-Requests": "1",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "Sec-Ch-Ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "65.24.251.73,::ffff:10.0.0.20",
+      "X-Real-Ip": "65.24.251.73",
+      "X-Request-Id": "d59ca3835c76fd6ec9685e3cac6b29f1",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 00:43:24.146 NotebookApp] 500 GET /user/atompa-shiny-2l920hcc/rstudio/p/cc6ec4a3/ (65.24.251.73) 48.360000ms referer=https://hub.gke2.mybinder.org/user/atompa-shiny-2l920hcc/rstudio/
+[I 00:43:58.139 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:43:58.143 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:44:32.901 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:44:32.905 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:44:56.145 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:44:56.149 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:45:46.790 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:45:46.794 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:50:02.915 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:50:02.920 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:54:35.692 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:54:35.696 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:55:26.367 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:55:26.371 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:57:11.696 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:57:11.700 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:58:37.831 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:58:37.836 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:59:21.230 NotebookApp] Trying to establish websocket connection to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:59:21.235 NotebookApp] Websocket connection established to ws://localhost:59707/p/cc6ec4a3/websocket/
+[I 00:59:49.968 NotebookApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 01:00:14.127 NotebookApp] Saving file at /binder/environment.yml
+[I 01:00:26.650 NotebookApp] Saving file at /binder/environment.yml

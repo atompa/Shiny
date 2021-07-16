@@ -8,7 +8,7 @@
 #
 
 library(shiny)
-
+library (ggplot2)
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
@@ -112,8 +112,13 @@ server <- function(input, output) {
         summary(lmPlot)$slope
         summary(lmPlot)$coefficients
         summary(lmPlot)$r.squared
+        
+       
+        paste("Adj R2 = ",signif(summary(lmPlot)$adj.r.squared, 5),
+              "Intercept =",signif(lmPlot$coef[[1]],5 ),
+              " Slope =",signif(lmPlot$coef[[2]], 5))
+                               
     })
-    
     
     output$contents <- renderTable({
         

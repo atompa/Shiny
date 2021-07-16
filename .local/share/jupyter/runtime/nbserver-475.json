@@ -1,5 +1,5 @@
 {
-  "base_url": "/binder/jupyter/user/atompa-shiny-4edlyjgk/",
+  "base_url": "/user/atompa-shiny-2l920hcc/",
   "hostname": "0.0.0.0",
   "notebook_dir": "/home/jovyan",
   "password": false,
@@ -7,6 +7,6 @@
   "port": 8888,
   "secure": false,
   "sock": "",
-  "token": "ooxqzb-QTZqmbiv4zn97bQ",
-  "url": "http://0.0.0.0:8888/binder/jupyter/user/atompa-shiny-4edlyjgk/"
+  "token": "mbzunSdsQk6Tyrxm7Me_LA",
+  "url": "http://0.0.0.0:8888/user/atompa-shiny-2l920hcc/"
 }
