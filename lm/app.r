@@ -113,9 +113,7 @@ server <- function(input, output) {
         
      output$summary <- renderText({
     
-      
-       
-        paste("Adj R2 = ",signif(summary(LinearModel())$adj.r.squared, 5),
+       paste("R2 = ",signif(summary(LinearModel())$r.squared, 5),
               "Intercept =",signif(LinearModel()$coef[[1]],5 ),
               "Slope =",signif(LinearModel()$coef[[2]], 5))    
                                
@@ -124,7 +122,7 @@ server <- function(input, output) {
      output$Rsquared <- renderText({
          
          
-         paste("Adj R2 = ",signif(summary(LinearModel())$adj.r.squared, 5))
+         paste("R2 = ",signif(summary(LinearModel())$r.squared, 5))
                
          
      })
