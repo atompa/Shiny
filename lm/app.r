@@ -66,8 +66,12 @@ ui <- fluidPage(
         mainPanel(
            plotOutput("distPlot"),
            plotOutput("lmPlot"),
-           tableOutput("contents"),
-           textOutput("summary"),
+           h4("Rsquared"),
+           textOutput("Rsquared"),
+           h4("Intercept"),
+           textOutput("Intercept"),
+           h4("Slope"),
+           textOutput("Slope"),
         )
     )
 )
@@ -102,24 +106,45 @@ server <- function(input, output) {
        # lmPlot <- lm(y ~ x)
         plot(dataInput()$x,dataInput()$y)
         abline(LinearModel())
-    })
-        
-     output$summary <- renderPrint({
-        y <- dataInput()$y
-        x <- dataInput()$x
-        lmPlot <- lm(y ~ x)
-        #attributes(summary(lmPlot))
-        summary(lmPlot)$slope
-        summary(lmPlot)$coefficients
-        summary(lmPlot)$r.squared
         
        
-        paste("Adj R2 = ",signif(summary(lmPlot)$adj.r.squared, 5),
-              "Intercept =",signif(lmPlot$coef[[1]],5 ),
-              " Slope =",signif(lmPlot$coef[[2]], 5))
+        
+    })
+        
+     output$summary <- renderText({
+    
+      
+       
+        paste("Adj R2 = ",signif(summary(LinearModel())$adj.r.squared, 5),
+              "Intercept =",signif(LinearModel()$coef[[1]],5 ),
+              "Slope =",signif(LinearModel()$coef[[2]], 5))    
                                
     })
+     
+     output$Rsquared <- renderText({
+         
+         
+         paste("Adj R2 = ",signif(summary(LinearModel())$adj.r.squared, 5))
+               
+         
+     })
+     
+     output$Intercept <- renderText({
+         
+         
+         paste("Intercept =",signif(LinearModel()$coef[[1]],5))
+         
+         
+     })
     
+     output$Slope <- renderText({
+         
+         
+         paste("Slope =",signif(LinearModel()$coef[[2]], 5))
+         
+     
+     })
+     
     output$contents <- renderTable({
         
         # input$file1 will be NULL initially. After the user selects
