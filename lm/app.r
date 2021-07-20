@@ -59,7 +59,7 @@ ui <- fluidPage(
             
             actionButton("lmPlot", "Linear Model"),
             tags$hr(), # Horizontal line
-            
+            downloadButton('downloadPlot', 'Download Plot')
         ),
 
         # Show a plot of the generated distribution
@@ -72,6 +72,8 @@ ui <- fluidPage(
            textOutput("Intercept"),
            h4("Slope"),
            textOutput("Slope"),
+           
+          
         )
     )
 )
@@ -100,17 +102,26 @@ server <- function(input, output) {
         plot(dataInput()$x,dataInput()$y)
     })
 
-    output$lmPlot <- renderPlot({
-       # y <- dataInput()$y
-       # x <- dataInput()$x
-       # lmPlot <- lm(y ~ x)
+    lmGraph <- function(){
         plot(dataInput()$x,dataInput()$y)
         abline(LinearModel())
         
        
         
-    })
+    }
         
+    
+    
+    output$lmPlot <- renderPlot({
+        # y <- dataInput()$y
+        # x <- dataInput()$x
+        # lmPlot <- lm(y ~ x)
+       # plot(dataInput()$x,dataInput()$y)
+        # abline(LinearModel())
+        lmGraph()
+        
+        
+    })
      output$summary <- renderText({
     
        paste("R2 = ",signif(summary(LinearModel())$r.squared, 5),
@@ -143,23 +154,20 @@ server <- function(input, output) {
      
      })
      
-    output$contents <- renderTable({
+    
+             
+     output$downloadPlot <- downloadHandler(
+         filename = function() { paste(input$file1$datapath, '.png', sep='') },
+         content = function(file) {
+             png(file)
+             lmGraph()
+             dev.off()
+                 })
+            }
         
-        # input$file1 will be NULL initially. After the user selects
-        # and uploads a file, head of that data file by default,
-        # or all rows if selected, will be shown.
+    
         
-        
-        if(input$disp == "head") {
-            return(head(dataInput()))
-        }
-        else {
-            return(dataInput())
-        }
-        
-    })
-        
-}
+
 
 # Run the application 
 shinyApp(ui = ui, server = server)
